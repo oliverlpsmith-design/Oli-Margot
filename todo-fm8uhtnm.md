@@ -1,0 +1,52 @@
+# Project TODO
+
+- [x] Open the existing Investor Scout project and confirm the live codebase is `nsw_property_research`.
+- [x] Audit the current database schema, RealtyAPI search configuration, NSW planning adapters, category classifiers, nightly scan flow, catalogue UI, property UI, and role-based protections.
+- [x] Document the existing 34 NSW RealtyAPI search units and preserve their current behavior as a regression baseline.
+- [x] Define a comprehensive, near-non-overlapping QLD RealtyAPI search-unit registry with stable identifiers, state metadata, locality coverage, and enabled/disabled controls.
+- [x] Model QLD scan request volume against the 85,000-request monthly allowance and retain incremental listing deduplication.
+- [ ] Identify authoritative QLD statewide and council-level planning, zoning, minimum-lot/subdivision, height, density, flood, bushfire, biodiversity, and related spatial sources with access methods and provenance.
+- [ ] Define a state-neutral planning-data contract that preserves prominent zoning, minimum lot size, height, density/FSR-equivalent, and risk fields for both NSW and QLD.
+- [x] Define a QLD zone-normalization taxonomy for residential, centre, mixed-use, industrial, rural, emerging-community, environmental, and special-purpose zones.
+- [x] Define a council-aware QLD subdivision-rule registry with source links, effective dates, confidence, and explicit unknown/manual-review states.
+- [x] Present the implementation checkpoint, source-access limitations, phased QLD coverage, validation method, and API-credit safeguards for user approval before code changes.
+- [x] Preserve QLD planning provenance in the existing `classificationEvidence` JSON contract and widen both zone-code fields to retain descriptive QLD scheme-zone names without breaking NSW records.
+- [x] Implement QLD RealtyAPI search configuration and state-aware listing ingestion.
+- [ ] Implement QLD planning/spatial adapters with authoritative-source provenance, graceful fallbacks, caching, and explicit unavailable/unknown values.
+- [x] Adapt subdivision, positive-geared, deceased-estate, dual-income/granny-flat, development-site, and distressed/mortgagee classifiers for QLD terminology and council-aware rules.
+- [x] Prevent QLD listings from being classified as subdivision-ready when minimum-lot or council-rule evidence is unavailable; route uncertain cases to manual review.
+- [x] Add QLD to the nightly scan alongside NSW using incremental new-listing processing and sold/inactive reconciliation only.
+- [x] Keep the implemented scan, live-search, and CSV export RealtyAPI-credit controls server-side and administrator-only.
+- [x] Add state coverage indicators and a deferred Apply/Search state filter to catalogue views without triggering live RealtyAPI searches for regular users.
+- [x] Update property cards and dynamic property detail pages to present QLD planning and risk data prominently and category-relevantly.
+- [x] Add Vitest coverage for QLD search units, zone normalization, classifier safeguards, incremental scan fan-out, selected admin authorization, state filters, QLD adapter fallbacks, and NSW regressions.
+- [ ] Validate representative QLD listings across councils and all six categories, record false-positive/uncertain cases, and tune rules conservatively.
+- [x] Run type checks, unit/integration tests, build verification, and responsive UI screenshots before release.
+- [ ] Review this ledger, save a release checkpoint, verify the auto-published deployment, and document operating notes and known source limitations.
+- [x] Create an explicit NSW baseline artifact listing all 34 current RealtyAPI search units with region IDs, labels, ordering, and fan-out counts.
+- [ ] Add an automated NSW registry regression assertion for 12 region groups, 34 enabled units, exact ordered location strings, and `state: "NSW"` metadata.
+- [x] Produce and validate a research proposal mapping all 77 QLD councils exactly once into 15 user-facing groups and 17 live-tested RealtyAPI primary units, plus a statewide incremental safety-net design.
+- [ ] Add explicit `state`, `enabled`, scan-mode, ordering, and safety-net activation controls to every implemented QLD search unit with a testable registry schema.
+- [ ] Document locality-level coverage and fallback handling for each QLD search unit, including remote councils and Weipa service-area handling, and record any historical-backfill coverage limitations explicitly.
+- [ ] Prove remaining cross-unit overlaps are deduplicated by listing ID and normalized address through automated registry/sweep regression tests, or redesign the overlapping units.
+- [x] Implement the user-approved accelerated QLD release using the 17 validated search units, statutory zone taxonomy, statewide spatial sources, and four validated council-machine adapters; all remaining councils retain manual-review fallbacks.
+- [x] Record any council or planning field not backed by a validated machine-readable source as `unknown` or `manual_review`, with an official verification link; never infer a clear or permitted outcome from missing QLD data.
+- [x] Preserve the unfinished council-source cluster as a documented post-release data-coverage gap rather than silently claiming complete Queensland planning coverage.
+- [ ] Verify the deployed nightly scan remains within the modelled warm QLD search budget and does not expose RealtyAPI-triggering controls to non-admin users.
+- [x] Harden the live NSW end-to-end regression so an unavailable zoning polygon is accepted only when other planning evidence resolves and the subdivision verdict remains fail-closed, rather than treating an upstream partial response as an application failure.
+- [x] Add explicit non-admin rejection tests for every remaining RealtyAPI-credit-consuming procedure, including analysis and any refresh-style path.
+- [x] Implement the wider QLD council-rule registry with source links, effective dates, confidence, and Vitest coverage.
+- [ ] Integrate further validated council-machine adapters from the completed source inventory beyond Gold Coast, Moreton Bay, Logan, and Redland.
+- [x] Refactor QLD planning sources into a typed council-rule registry with field-level provenance and add the validated Mount Isa zoning-only source as an explicit `council_partial` adapter.
+- [x] Persist QLD council provenance and confidence with fresh catalogue classification evidence, and fail closed to `manual_review` when historic QLD rows lack an explicit stored evidence tier.
+- [x] Investigate the missing Queensland catalogue listings by checking live database coverage and scan-run history.
+- [x] Diagnose and remediate the QLD catalogue-visibility blocker; no QLD-only scan was needed because live rows were already ingested.
+- [x] Verify that Queensland rows are visible in the catalogue and report the live recovery status.
+- [x] Fix the catalogue’s QLD-state display path so conservatively classified `unknown` QLD rows are visible rather than suppressed by the NSW-oriented confirmed-verdict default.
+- [x] Restore NSW-oriented verdict and land defaults when a user switches from QLD back to NSW or the combined catalogue, with regression coverage for the real transition path.
+- [x] Publish the QLD catalogue visibility repair and verify the production domain renders QLD rows after the state selection is applied.
+- [x] Record live production proof: selecting Queensland, then applying filters, displayed 337 QLD catalogue rows on https://nswpropres-efznl8q4.manus.space/catalogue; no duplicate backfill was required.
+- [x] Locate the connected GitHub repository created for Investor Scout and confirm its remote state (`oliverlpsmith-design/Oli-Margot`, currently without a default branch).
+- [ ] Audit and complete secret-safe repository ignore rules for the full Investor Scout source export.
+- [ ] Create and push the initial complete Investor Scout code commit to the connected GitHub repository.
+- [ ] Verify the remote branch and tracked contents after the GitHub push.

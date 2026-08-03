@@ -1,0 +1,1 @@
+ALTER TABLE `catalogueListings` ADD `priceNumeric` decimal(14,2);

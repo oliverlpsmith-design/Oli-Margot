@@ -1,0 +1,1 @@
+ALTER TABLE `catalogueListings` ADD `investmentTags` varchar(255) DEFAULT '' NOT NULL;

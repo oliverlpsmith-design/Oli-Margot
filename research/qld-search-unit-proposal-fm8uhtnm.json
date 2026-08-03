@@ -1,0 +1,127 @@
+{
+  "version": 1,
+  "status": "research-proposal-not-implemented",
+  "state": "QLD",
+  "officialCouncilCount": 77,
+  "statisticalAreaNote": "QGSO lists 78 statistical LGA areas because Weipa Town Authority is listed separately; Queensland has 77 local governments.",
+  "providerEvidenceCapturedAt": "2026-08-03T09:29:13.710Z",
+  "groups": [
+    {
+      "id": "qld-brisbane",
+      "label": "Brisbane",
+      "lgas": ["Brisbane"],
+      "searchUnits": [{ "id": "qld-brisbane-greater", "location": "Brisbane - Greater Region, QLD", "liveTotal": 3844 }]
+    },
+    {
+      "id": "qld-gold-coast",
+      "label": "Gold Coast",
+      "lgas": ["Gold Coast"],
+      "searchUnits": [{ "id": "qld-gold-coast", "location": "Gold Coast, QLD", "liveTotal": 2935 }]
+    },
+    {
+      "id": "qld-sunshine-coast",
+      "label": "Sunshine Coast and Noosa",
+      "lgas": ["Sunshine Coast", "Noosa"],
+      "searchUnits": [{ "id": "qld-sunshine-coast", "location": "Sunshine Coast, QLD", "liveTotal": 2634 }]
+    },
+    {
+      "id": "qld-moreton-bay",
+      "label": "Moreton Bay",
+      "lgas": ["Moreton Bay"],
+      "searchUnits": [{ "id": "qld-moreton-bay", "location": "Moreton Bay Region, QLD", "liveTotal": 3596 }]
+    },
+    {
+      "id": "qld-ipswich",
+      "label": "Ipswich",
+      "lgas": ["Ipswich"],
+      "searchUnits": [{ "id": "qld-ipswich-greater", "location": "Ipswich - Greater Region, QLD", "liveTotal": 2399 }]
+    },
+    {
+      "id": "qld-logan",
+      "label": "Logan",
+      "lgas": ["Logan"],
+      "searchUnits": [{ "id": "qld-logan-city", "location": "Logan City - Region, QLD", "liveTotal": 2923 }]
+    },
+    {
+      "id": "qld-redlands",
+      "label": "Redlands",
+      "lgas": ["Redland"],
+      "searchUnits": [{ "id": "qld-redland-city", "location": "Redland City Region, QLD", "liveTotal": 1414 }]
+    },
+    {
+      "id": "qld-scenic-rim",
+      "label": "Scenic Rim",
+      "lgas": ["Scenic Rim"],
+      "searchUnits": [{ "id": "qld-scenic-rim", "location": "Scenic Rim Region, QLD", "liveTotal": 517 }]
+    },
+    {
+      "id": "qld-somerset",
+      "label": "Somerset",
+      "lgas": ["Somerset"],
+      "searchUnits": [{ "id": "qld-somerset", "location": "Somerset Region, QLD", "liveTotal": 349 }]
+    },
+    {
+      "id": "qld-lockyer-valley",
+      "label": "Lockyer Valley",
+      "lgas": ["Lockyer Valley"],
+      "searchUnits": [{ "id": "qld-lockyer-valley", "location": "Lockyer Valley Region, QLD", "liveTotal": 423 }]
+    },
+    {
+      "id": "qld-darling-downs",
+      "label": "Darling Downs and South West",
+      "lgas": ["Toowoomba", "Southern Downs", "Western Downs", "Goondiwindi", "Maranoa", "Balonne"],
+      "searchUnits": [{ "id": "qld-darling-downs", "location": "Darling Downs, QLD", "liveTotal": 1915 }]
+    },
+    {
+      "id": "qld-wide-bay-burnett",
+      "label": "Wide Bay Burnett",
+      "lgas": ["Bundaberg", "Fraser Coast", "Gympie", "North Burnett", "South Burnett", "Cherbourg"],
+      "searchUnits": [
+        { "id": "qld-bundaberg-greater", "location": "Bundaberg - Greater Region, QLD", "liveTotal": 958 },
+        { "id": "qld-hervey-bay-greater", "location": "Hervey Bay - Greater Region, QLD", "liveTotal": 1001 },
+        { "id": "qld-gympie-greater", "location": "Gympie - Greater Region, QLD", "liveTotal": 816 }
+      ]
+    },
+    {
+      "id": "qld-central",
+      "label": "Central Queensland and Mackay-Whitsunday",
+      "lgas": ["Banana", "Central Highlands", "Gladstone", "Livingstone", "Rockhampton", "Woorabinda", "Isaac", "Mackay", "Whitsunday"],
+      "searchUnits": [{ "id": "qld-central-region", "location": "Central Queensland - Region, QLD", "liveTotal": 2741 }]
+    },
+    {
+      "id": "qld-northern",
+      "label": "North, Far North and Cape York",
+      "lgas": ["Aurukun", "Burdekin", "Cairns", "Cassowary Coast", "Charters Towers", "Cook", "Croydon", "Douglas", "Etheridge", "Hinchinbrook", "Hope Vale", "Kowanyama", "Lockhart River", "Mapoon", "Mareeba", "Napranum", "Northern Peninsula Area", "Palm Island", "Pormpuraaw", "Tablelands", "Torres", "Torres Strait Island", "Townsville", "Wujal Wujal", "Yarrabah"],
+      "serviceAreas": ["Weipa Town Authority"],
+      "searchUnits": [{ "id": "qld-northern-region", "location": "Northern Queensland - Region, QLD", "liveTotal": 4642 }]
+    },
+    {
+      "id": "qld-western",
+      "label": "Western and North West Queensland",
+      "lgas": ["Barcaldine", "Barcoo", "Blackall-Tambo", "Boulia", "Bulloo", "Burke", "Carpentaria", "Cloncurry", "Diamantina", "Doomadgee", "Flinders", "Longreach", "McKinlay", "Mornington", "Mount Isa", "Murweh", "Paroo", "Quilpie", "Richmond", "Winton"],
+      "searchUnits": [{ "id": "qld-western-region", "location": "Western Queensland - Region, QLD", "liveTotal": 317 }]
+    }
+  ],
+  "incrementalSafetyNet": {
+    "id": "qld-statewide-newest",
+    "location": "Queensland",
+    "modes": ["incremental"],
+    "activationGate": "QLD primary-region bootstrap completed",
+    "position": "first",
+    "purpose": "Discover newly listed properties statewide before regional passes and catch remote-area gaps without using the capped statewide query for historical backfill."
+  },
+  "validation": {
+    "primaryGroupCount": 15,
+    "primarySearchUnitCount": 17,
+    "liveStateTotal": 34674,
+    "primaryRawTotalSum": 33424,
+    "fullBackfillSearchRequests": 1122,
+    "statePageOneListingsMatchedByPrimaryUnits": 30,
+    "statePageOneListingsTested": 30,
+    "pairwisePrimaryFirstPageOverlap": [{ "left": "Somerset Region, QLD", "right": "Lockyer Valley Region, QLD", "count": 1 }],
+    "warmIncrementalSearchRequestEstimatePerDay": 36,
+    "warmIncrementalSearchRequestEstimatePer30Days": 1080,
+    "maximumNightlySoldCheckDetailRequests": 150,
+    "maximum30DaySoldCheckDetailRequests": 4500
+  }
+}

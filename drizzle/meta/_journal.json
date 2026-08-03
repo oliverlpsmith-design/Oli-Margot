@@ -1,0 +1,104 @@
+{
+  "version": "7",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1784088364121,
+      "tag": "0000_minor_magus",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1784088501621,
+      "tag": "0001_tidy_nova",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1784332019303,
+      "tag": "0002_dry_sleeper",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "5",
+      "when": 1784342856550,
+      "tag": "0003_awesome_shiva",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "5",
+      "when": 1784368296877,
+      "tag": "0004_bitter_mojo",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "5",
+      "when": 1784368573802,
+      "tag": "0005_puzzling_lightspeed",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "5",
+      "when": 1784368768250,
+      "tag": "0006_groovy_ben_grimm",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "5",
+      "when": 1784615565356,
+      "tag": "0007_lowly_bullseye",
+      "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "5",
+      "when": 1784620991026,
+      "tag": "0008_striped_stardust",
+      "breakpoints": true
+    },
+    {
+      "idx": 9,
+      "version": "5",
+      "when": 1784671285424,
+      "tag": "0009_fresh_misty_knight",
+      "breakpoints": true
+    },
+    {
+      "idx": 10,
+      "version": "5",
+      "when": 1784773904064,
+      "tag": "0010_gorgeous_glorian",
+      "breakpoints": true
+    },
+    {
+      "idx": 11,
+      "version": "5",
+      "when": 1785551916935,
+      "tag": "0011_perfect_living_lightning",
+      "breakpoints": true
+    },
+    {
+      "idx": 12,
+      "version": "5",
+      "when": 1785553113349,
+      "tag": "0012_lethal_ink",
+      "breakpoints": true
+    },
+    {
+      "idx": 13,
+      "version": "5",
+      "when": 1785757615830,
+      "tag": "0013_harsh_tony_stark",
+      "breakpoints": true
+    }
+  ]
+}

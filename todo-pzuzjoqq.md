@@ -1,0 +1,53 @@
+# Project TODO
+
+- [x] Open checkpoint 61abf08b and review the current catalogue, niche category, PropertyDetail, API, database, and test implementation
+- [x] Add deferred minimum-price and maximum-price free-text filters to the main catalogue
+- [x] Replace the catalogue land-size dropdown with a deferred free-text input accepting acres or square metres from 0 to 500 acres
+- [x] Add the same deferred price and flexible land-size filters to every niche category page
+- [x] Make every accessible niche category property card open its internal PropertyDetail analysis page while preserving the existing sign-up gate
+- [x] Extend catalogue and category backend queries to apply minimum price, maximum price, and land-size bounds using stored database values only
+- [x] Add prominent category-specific investment analysis for subdivision listings
+- [x] Add prominent category-specific investment analysis for positive-geared listings
+- [x] Add prominent category-specific investment analysis for deceased-estate listings
+- [x] Add prominent category-specific investment analysis for dual-income and granny-flat listings
+- [x] Add prominent category-specific investment analysis for development-site listings
+- [x] Add prominent category-specific investment analysis for distressed and mortgagee listings
+- [x] Show a clear NSW Planning Portal data grid on every property detail page, with extra prominence for subdivision and development listings
+- [x] Keep the NSW Planning Portal grid top and prominent for subdivision listings even when they also carry other niche-category tags
+- [x] Add or update Vitest coverage for filter parsing, catalogue filtering, category filtering, and category-specific analysis helpers
+- [x] Verify TypeScript, tests, and production build complete cleanly
+- [x] Visually verify catalogue, niche category, and PropertyDetail layouts on desktop and mobile
+- [x] Save and publish a final checkpoint — version 751f2c11
+- [x] Add Subdividable Properties to the niche category navigation dropdown
+- [x] Add the standard investment-category header to the subdivision niche page
+- [x] Verify TypeScript and the full regression suite after the navigation and header changes
+- [x] Visually verify the Subdividable Land Investments header at /niche/subdivision
+- [x] Verify the Subdividable Properties dropdown destination with focused navigation-metadata regression coverage
+- [x] Save and publish the navigation and subdivision-header fixes — version ce6cb710
+- [x] Audit the actual five niche classifiers and subdivision scoring logic so user-facing documentation matches the code
+- [x] Change the subdivision catalogue default minimum land size from 3,000 sqm to 100 acres (approximately 404,700 sqm) while keeping the field editable
+- [x] Ensure subdivision saved searches and watchlist return paths preserve the 100-acre default unless a user explicitly saves another land-size value
+- [x] Add a persistent watchlist-to-subdivision navigation affordance that returns to `/niche/subdivision` with the 100-acre default
+- [x] Add a reusable accessible collapsible "How We Find These" section to the subdivision category page with actual screening and scoring logic
+- [x] Add accurate category-specific "How We Find These" sections to positive geared, deceased estates, dual income, development sites, and distressed/mortgagee pages
+- [x] Include honest classifier limitations and distinguish keyword classification from database-derived thresholds and planning-data screens
+- [x] Add a brief homepage explanation of Investor Scout's overall opportunity-discovery approach
+- [x] Add or update regression tests for the subdivision default, saved-search behaviour, documentation coverage, and category criteria metadata
+- [x] Verify TypeScript, the full test suite, and the production build complete cleanly
+- [x] Visually verify the 100-acre default and all discovery explanations on desktop and mobile — initial desktop, mobile, and expanded-state checks completed; further visual checks waived at user request
+- [x] Save and publish the 100-acre default and category-documentation checkpoint — version 9e254df7
+- [x] Attempt to locate and reconcile `Investor_Scout_NSW_Classification_Research_Report.md`; the named artifact was unavailable in the shared workspace, so reconcile the user-specified findings and retained source notes with the latest shared classifier implementation
+- [x] Audit stored listing and planning fields plus the actual nightly scan call path before defining stricter gates
+- [x] Tighten subdivision qualification with frontage, permissive-zoning, bushfire, and flood hard gates while eliminating keyword-only positives
+- [x] Replace the positive-geared gross-yield proxy with modelled net cash flow using finance, rates, insurance, management, maintenance, and vacancy assumptions
+- [x] Tighten deceased-estate classification with contextual exclusions and auditable provenance tiers
+- [x] Replace obsolete development-site zone references with E1–E5 and add residual-land-value feasibility as a quality gate
+- [x] Tighten dual-income classification with the 450 sqm secondary-dwelling land threshold and zoning permission checks
+- [x] Tighten distressed and mortgagee classification to verified legal-provenance signals rather than generic motivated-vendor wording
+- [x] Apply the additive database migration for classifier version, auditable evidence, and explicit bushfire/flood lookup statuses
+- [x] Ensure the nightly scan persists and uses the tightened classifier outputs and auditable evidence
+- [x] Update category-methodology documentation so it remains accurate after the classifier changes
+- [x] Correct current NSW zone-display semantics so E1–E5 are employment zones and C1–C4 are conservation zones
+- [x] Add regression coverage for every hard gate, provenance tier, financial model, and nightly-scan integration path
+- [x] Verify TypeScript, the full test suite, and the production build complete cleanly
+- [x] Save and publish the tightened-classifier checkpoint — version f56f4e3c

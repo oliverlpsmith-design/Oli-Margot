@@ -1,0 +1,22 @@
+# AI Investment Analyst — Session TODO
+
+- [x] Audit the current catalogue schema, category fields, planning data, finance fields, existing admin controls, routing, and nightly scan workflow.
+- [x] Inspect the current periodic-job infrastructure and choose a schedule that fits the existing catalogue refresh flow and hosting constraints.
+- [x] Fetch the live built-in LLM catalogue and confirm a cost-controlled model with structured JSON output support.
+- [x] Confirm the proposed architecture, analysis cadence, candidate limits, and number of displayed picks with the user before implementation: three picks per persona, Sunday 17:00 UTC, `gpt-5-mini` with `gpt-5` validation fallback, and scenario-labelled cash-flow analysis.
+- [x] Add database tables for analysis runs and scored property results, with code-defined persona contracts and current picks derived from ranked rows in the latest completed run; persist score components, evidence confidence, reasoning, limitations, model metadata, and UTC timestamps.
+- [x] Add deterministic persona-specific candidate gates so the LLM only receives plausible catalogue candidates within each hypothetical budget.
+- [x] Implement server-side structured LLM scoring for The Subdivider, The Cash Flow Hunter, and The Value Finder using the built-in project LLM integration.
+- [x] Validate every LLM response against a strict schema, cap unsupported claims, persist audit metadata, and fail safely without replacing the last successful picks.
+- [x] Add idempotent scheduled execution that analyses only new or materially changed catalogue data and remains within the runtime limit. The authenticated callback, incremental engine, and enabled Sunday 17:00 UTC production Heartbeat schedule are complete.
+- [x] Add an admin-only manual rerun procedure with server-side role enforcement, concurrency protection, visible status, and no trigger for regular users.
+- [x] Add read procedures for current public/member-visible agent picks and admin-only run history/status without exposing private prompts or credentials.
+- [x] Build a responsive AI Agent Picks experience that matches the existing Investor Scout design and links every pick to the dynamic property detail page.
+- [x] Register the dedicated `/agent-picks` route and add a discoverable navigation entry without disrupting existing catalogue routes.
+- [x] Show each persona’s hypothetical budget, strategy, score, evidence confidence, rationale, key metrics, material risks/unknowns, analysis timestamp, and an intelligence-not-advice disclosure.
+- [x] Add and update Vitest coverage for pre-screening, structured-output validation, ranking, idempotency, stale-run protection, admin authorization, and public read behavior.
+- [x] Run type checks, unit tests, build checks, browser validation, responsive screenshots, accessibility checks, and log review.
+- [x] Display the latest completed-run timestamp within every persona section.
+- [x] Complete an explicit accessibility audit of `/agent-picks`, including keyboard focus, link/button names, heading order, image alternatives, contrast, and reduced-motion behavior.
+- [x] Verify measured color contrast for the `/agent-picks` hero, badges, muted text, disclosure banner, buttons, and card metadata; correct any failing combinations and record findings.
+- [x] Mark completed checklist items, save a checkpoint, and provide operating notes for cadence, model cost controls, manual reruns, and future tuning.

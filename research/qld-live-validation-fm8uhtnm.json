@@ -1,0 +1,68 @@
+{
+  "generatedAt": "2026-08-03T11:34:15.842Z",
+  "realtyApiRequests": 6,
+  "sampleCount": 3,
+  "safeguards": {
+    "qldSubdividableVerdicts": 0,
+    "nonQldListings": 0
+  },
+  "samples": [
+    {
+      "searchLocation": "Gold Coast, QLD",
+      "searchTotal": 5402,
+      "listingId": "151945384",
+      "address": "10D/5 Bayview Street, Runaway Bay, Qld, 4216",
+      "propertyType": "apartment",
+      "landAreaSqm": null,
+      "lgaName": "Gold Coast City",
+      "planningCoverage": "council_machine",
+      "schemeName": "Gold Coast City Plan",
+      "zoneCode": "Unzoned",
+      "minimumLotSizeSqm": null,
+      "bushfireStatus": "unknown",
+      "floodStatus": "clear",
+      "subdivisionVerdict": "not_subdividable",
+      "potentialLots": null,
+      "investmentTags": [],
+      "classifierVersion": 3
+    },
+    {
+      "searchLocation": "Moreton Bay Region, QLD",
+      "searchTotal": 4231,
+      "listingId": "151945236",
+      "address": "2/30 Tysoe Street, Deception Bay, Qld, 4508",
+      "propertyType": "unit",
+      "landAreaSqm": 88,
+      "lgaName": "Moreton Bay City",
+      "planningCoverage": "manual_review",
+      "schemeName": "Moreton Bay Regional Council Planning Scheme",
+      "zoneCode": null,
+      "minimumLotSizeSqm": null,
+      "bushfireStatus": "clear",
+      "floodStatus": "clear",
+      "subdivisionVerdict": "unknown",
+      "potentialLots": null,
+      "investmentTags": [],
+      "classifierVersion": 3
+    },
+    {
+      "searchLocation": "Logan City - Region, QLD",
+      "searchTotal": 3246,
+      "listingId": "151942884",
+      "address": "8 Mercy Circuit, Park Ridge, Qld, 4125",
+      "propertyType": "house",
+      "landAreaSqm": 350,
+      "lgaName": "Logan City",
+      "planningCoverage": "council_machine",
+      "schemeName": "Logan Planning Scheme 2015",
+      "zoneCode": "Emerging Community",
+      "minimumLotSizeSqm": null,
+      "bushfireStatus": "flagged",
+      "floodStatus": "clear",
+      "subdivisionVerdict": "not_subdividable",
+      "potentialLots": null,
+      "investmentTags": [],
+      "classifierVersion": 3
+    }
+  ]
+}

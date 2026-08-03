@@ -1,0 +1,1 @@
+ALTER TABLE `catalogueListings` ADD `descriptionShort` varchar(512);
