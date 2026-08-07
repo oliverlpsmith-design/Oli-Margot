@@ -115,6 +115,10 @@ temp/
 *.sqlite
 *.sqlite3
 
+# Database dumps from scripts/backup-database.sh — contain user records
+backups/
+*.sql.gz
+
 # Webdev artifacts (checkpoint zips, migrations, etc.)
 .webdev/
 
